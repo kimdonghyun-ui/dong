@@ -12,7 +12,7 @@ Vue.use(VueRouter);
 
 // 라우터 객체 생성
 const router = new VueRouter({
-  mode: 'history',
+  mode: 'hash',
   routes: [
     {     
       path: '/',
