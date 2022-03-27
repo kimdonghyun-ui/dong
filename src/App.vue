@@ -1,17 +1,23 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <!-- 라우팅 링크 -->
+    <!-- <router-link to="foo">foo </router-link>
+    <router-link to="bar">bar </router-link> -->
+    <!-- 컴포넌트가 라우팅 되는 위치  -->
+    <LayoutBox>
+       <router-view></router-view>
+    </LayoutBox>
+    
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import LayoutBox from './components/LayoutBox.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    LayoutBox
   }
 }
 </script>
@@ -23,6 +29,5 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
